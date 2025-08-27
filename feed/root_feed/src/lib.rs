@@ -157,7 +157,7 @@ async fn create_feed_canister() -> Principal {
                 log_visibility: None
             })
         }, 
-        4 * T_CYCLES
+        3 * T_CYCLES
     ).await.unwrap().0.canister_id;
 
     let root_bucket = ROOT_BUCKET.with(|root_bucket| root_bucket.borrow().get().clone());
